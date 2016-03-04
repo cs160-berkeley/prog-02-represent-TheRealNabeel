@@ -1,6 +1,6 @@
 # PROG 02: Represent!
 
-Briefly describe your app here.
+
 
 ## Authors
 
@@ -8,7 +8,7 @@ Nabeel Saleem ([nabeelsaleem@berkeley.edu](mailto:your_email@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [160 Represent] (https://youtu.be/5kVirxXhy5U)
 
 ## Screenshots
 
@@ -16,4 +16,4 @@ See [your demo video title here] (https://link_to_your_video)
 
 ## Acknowledgments
 
-* Any other support
+http://jasonmcreynolds.com/?p=388
