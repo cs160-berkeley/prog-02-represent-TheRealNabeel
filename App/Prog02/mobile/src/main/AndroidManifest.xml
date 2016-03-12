@@ -3,6 +3,9 @@
     package="com.example.nabeel.prog02">
 
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
 
     <application
@@ -12,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:largeHeap="true">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC_DCFxTdu3oH146WX-y9Jmrk1m5XYawUY"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -70,6 +79,9 @@
                 <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
             </intent-filter>
         </service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0090a3eeb413cc73e2e7c3bf39f274915c80887c" />
     </application>
 
 </manifest>

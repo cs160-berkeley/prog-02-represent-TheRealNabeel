@@ -37,20 +37,20 @@ public class WatchListenerService extends WearableListenerService {
 
             //Log.d("T", "about to start watch MainActivity SENATOR_GARY_PETERS: Democrat");
             startActivity(intent);
-        } else if (messageEvent.getPath().equalsIgnoreCase( LEXY_FEED )) {
-            String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
-            Intent intent = new Intent(this, MainActivity.class );
-            intent.addFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
-            //Intent intent2 = new Intent(this, WatchAdapter.class );
-            //intent2.addFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
-
-
-
-            //you need to add this flag since you're starting a new activity from a service
-            intent.putExtra("SENATOR_GARY_PETERS", "Democrat2");
-            //intent2.putExtra("Senator Gary Peters", "Democrat2");
-            Log.d("T", "about to start watch MainActivity with SENATOR_GARY_PETERS: Democrat2");
-            startActivity(intent);
+//        } else if (messageEvent.getPath().equalsIgnoreCase( LEXY_FEED )) {
+//            String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
+//            Intent intent = new Intent(this, MainActivity.class );
+//            intent.addFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
+//            //Intent intent2 = new Intent(this, WatchAdapter.class );
+//            //intent2.addFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
+//
+//
+//
+//            //you need to add this flag since you're starting a new activity from a service
+//            intent.putExtra("SENATOR_GARY_PETERS", "Democrat2");
+//            //intent2.putExtra("Senator Gary Peters", "Democrat2");
+//            Log.d("T", "about to start watch MainActivity with SENATOR_GARY_PETERS: Democrat2");
+//            startActivity(intent);
         } else {
             super.onMessageReceived( messageEvent );
         }

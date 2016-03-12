@@ -32,11 +32,11 @@ public class WatchAdapter extends FragmentPagerAdapter {
 
             case 0:
                 //Log.d("T", "I came here");
-                return new Screen2();
-            case 1:
-                return new Screen3();
-            case 2:
                 return new Screen4();
+            case 1:
+                return new Screen2();
+            case 2:
+                return new Screen3();
             case 3:
                 if (MainActivity.catName.equals("Democrat")) {
                     return new Shakeandbake();

@@ -16,6 +16,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.support.wearable.view.FragmentGridPagerAdapter;
 
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -25,6 +28,11 @@ import java.util.Locale;
 
 public class MainActivity extends FragmentActivity {
 
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "lW6vIesCfhhG1txhC5fvXcpyB";
+    private static final String TWITTER_SECRET = "VjWBAtfsJ2bzEO1F0mbA9ARlIcbee9Wz3rPfCc0GWUnVNgsC2G";
+
+
     public static String catName = "";
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
@@ -33,6 +41,8 @@ public class MainActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
