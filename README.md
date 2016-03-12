@@ -1,6 +1,6 @@
 # PROG 02: Represent!
 
-
+My app allows watch and phone communication and makes use of API’s to correctly get the number of representatives per location/zip code. Enter a zip code or use your current location to find more info on the representatives representing that specific location. For even more info, please click on the more info button. Similarly, the watch shows the info of these representatives and a 2012 vote view which shows the 2012 presidential election statistics for the specific location entered.
 
 ## Authors
 
