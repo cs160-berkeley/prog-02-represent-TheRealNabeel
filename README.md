@@ -14,7 +14,6 @@ See [160 Represent Part 2] (https://youtu.be/5Ns09N2iMM8)
 ## Screenshots
 
 <img src="screenshots/Main View.png" height="400" alt="Screenshot"/>
-<img src="screenshots/Congressional View.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
