@@ -4,7 +4,7 @@ My app allows watch and phone communication and makes use of API’s to correctl
 
 ## Authors
 
-Nabeel Saleem ([nabeelsaleem@berkeley.edu](mailto:your_email@berkeley.edu))
+Nabeel Saleem
 
 ## Demo Video
 
