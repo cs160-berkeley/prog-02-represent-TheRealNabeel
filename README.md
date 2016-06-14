@@ -4,7 +4,7 @@ My app allows watch and phone communication and makes use of API’s to correctl
 
 ## Authors
 
-Nabeel Saleem
+Nabeel
 
 ## Demo Video
 
